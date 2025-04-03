@@ -8,8 +8,8 @@ public class App {
         TiposVariaveis testeVariaveis = new TiposVariaveis();
         Operadores testeOperadores = new  Operadores();
 
-        String primeiroNome = testeVariaveis.meuNome = "Rafael";
-        String segundoNome = testeVariaveis.meuNome = " Santos";
+        String primeiroNome = testeVariaveis.string = "Rafael";
+        String segundoNome = testeVariaveis.string = " Santos";
 
         System.out.println(testeOperadores.concatenacao(primeiroNome, segundoNome));
 

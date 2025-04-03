@@ -10,7 +10,7 @@ public class TiposVariaveis {
 
     // Uso da classe String para texto:
 
-    public String meuNome = "Rafael Santos";
+    public String string = "Rafael Santos";
 
 
     // Uso de Constantes
@@ -30,7 +30,7 @@ public class TiposVariaveis {
         System.out.println("Var int cep: "+cep);
         System.out.println("Var long cpf: "+cpf);
         System.out.println("Var float pi: "+pi);
-        System.out.println("Var String meuNome: "+meuNome);
+        System.out.println("Var String string: "+string);
         System.out.println("constante double valor_do_pi: "+VALOR_DO_PI);
      }
 }
