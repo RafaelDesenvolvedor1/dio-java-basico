@@ -1,3 +1,4 @@
+import edu.rafael.operadores.Operadores;
 import edu.rafael.tiposvariaveis.TiposVariaveis;
 
 public class App {
@@ -5,7 +6,13 @@ public class App {
         // System.out.println("Boa vindas turma DIO!");
 
         TiposVariaveis testeVariaveis = new TiposVariaveis();
+        Operadores testeOperadores = new  Operadores();
 
-        testeVariaveis.imprimirTiposVariaveis();
+        String primeiroNome = testeVariaveis.meuNome = "Rafael";
+        String segundoNome = testeVariaveis.meuNome = " Santos";
+
+        System.out.println(testeOperadores.concatenacao(primeiroNome, segundoNome));
+
+        //testeVariaveis.imprimirTiposVariaveis();
     }
 }
