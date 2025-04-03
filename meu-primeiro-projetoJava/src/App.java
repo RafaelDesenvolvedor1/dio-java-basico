@@ -5,14 +5,18 @@ public class App {
     public static void main(String[] args) throws Exception {
         // System.out.println("Boa vindas turma DIO!");
 
-        TiposVariaveis testeVariaveis = new TiposVariaveis();
+       // TiposVariaveis testeVariaveis = new TiposVariaveis();
         Operadores testeOperadores = new  Operadores();
 
-        String primeiroNome = testeVariaveis.string = "Rafael";
-        String segundoNome = testeVariaveis.string = " Santos";
+        int teste = 100;
 
-        System.out.println(testeOperadores.concatenacao(primeiroNome, segundoNome));
+        teste = testeOperadores.reduzir(teste, 1);
 
-        //testeVariaveis.imprimirTiposVariaveis();
+        System.out.println(teste);
+
+        teste = testeOperadores.reduzir(teste, 1);
+
+        System.out.println(teste);
+       
     }
 }
