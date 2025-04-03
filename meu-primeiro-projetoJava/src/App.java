@@ -8,13 +8,13 @@ public class App {
        // TiposVariaveis testeVariaveis = new TiposVariaveis();
         Operadores testeOperadores = new  Operadores();
 
-        int teste = 100;
+        boolean teste = false;
 
-        teste = testeOperadores.reduzir(teste, 1);
+        teste = testeOperadores.inverterBoolean(teste);
 
         System.out.println(teste);
-
-        teste = testeOperadores.reduzir(teste, 1);
+        
+        teste = testeOperadores.inverterBoolean(teste);
 
         System.out.println(teste);
        
