@@ -8,15 +8,17 @@ public class App {
        // TiposVariaveis testeVariaveis = new TiposVariaveis();
         Operadores testeOperadores = new  Operadores();
 
-        boolean teste = false;
 
-        teste = testeOperadores.inverterBoolean(teste);
+        int a = 5;
+        int b = 8;
+  
+        //Operador Ternário
 
-        System.out.println(teste);
+        String resultado = a == b ? "Verdadeiro" : "Falso";
+
+        //------------------
         
-        teste = testeOperadores.inverterBoolean(teste);
-
-        System.out.println(teste);
+        System.out.println(resultado);
        
     }
 }
