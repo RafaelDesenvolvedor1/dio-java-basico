@@ -1,24 +1,35 @@
+import edu.rafael.metodos.SmartTv;
 import edu.rafael.operadores.Operadores;
 import edu.rafael.tiposvariaveis.TiposVariaveis;
 
 public class Usuario {
     public static void main(String[] args) throws Exception {
-        // System.out.println("Boa vindas turma DIO!");
+        SmartTv tv = new SmartTv(true, 20, 5);
 
-       // TiposVariaveis testeVariaveis = new TiposVariaveis();
-        Operadores testeOperadores = new  Operadores();
+        // tv.aumentarVolume();
+        // tv.aumentarVolume();
+        // tv.aumentarVolume();
+        // tv.aumentarVolume();
+        tv.diminuirVolume();
+        tv.diminuirVolume();
+        tv.diminuirVolume();
+        tv.diminuirVolume();
+        tv.diminuirVolume();
 
+        tv.mudarCanal(0);
 
-        int a = 5;
-        int b = 8;
-  
-        //Operador Ternário
+        tv.aumentarCanal();
+        tv.aumentarCanal();
 
-        String resultado = a == b ? "Verdadeiro" : "Falso";
+        // tv.diminuirCanal();
+        // tv.diminuirCanal();
 
-        //------------------
-        
-        System.out.println(resultado);
+        tv.desligar();
+        tv.ligar();
+
+        System.out.println("Esta ligada? " + tv.getLigada());
+        System.out.println("Volume: "+ tv.getVolume());
+        System.out.println("Canal: " + tv.getCanal());
        
     }
 }

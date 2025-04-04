@@ -21,15 +21,28 @@ public class SmartTv {
     public void setLigada(boolean lig){ this.ligada = lig; }
 
     public int getCanal(){return this.canal; }
-    public void setCanal(int c){ this.canal = c; }
+    public void setCanal(int c){ 
+        if(c <= 0 || c >= 100){
+            this.canal = 1;
+        }else if(c > 0 && c < 100){
+            this.canal = c;
+        }
+    }
 
     
     public int getVolume(){return this.volume; }
     public void setVolume(int v){ 
-        if(v <= 100 && v >= 0){
-            this.volume = v;
-        }
+       if(v < 0){
+        this.volume = 0;
+
+       }else if(v >= 0 && v <= 100){
+        this.volume = v;
+       }else if(v > 100){
+        this.volume = 100;
+       }
     }
+
+
 
     public void ligar(){
    
@@ -42,11 +55,11 @@ public class SmartTv {
     }
 
     public void aumentarVolume(){
-        this.setVolume(this.volume++);
+        this.setVolume(this.getVolume() + 1);
     }
 
     public void diminuirVolume(){
-        this.setVolume(this.volume--);
+        this.setVolume(this.getVolume() - 1);
     }
 
     public void mudarCanal(int c){
@@ -54,10 +67,10 @@ public class SmartTv {
     }
 
     public void aumentarCanal(){
-        this.setCanal(this.canal++);
+        this.setCanal(this.getCanal() + 1);
     }
 
     public void diminuirCanal(){
-        this.setCanal(this.canal--);
+        this.setCanal(this.getCanal() - 1);
     }
 }
