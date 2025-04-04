@@ -1,7 +1,7 @@
 import edu.rafael.operadores.Operadores;
 import edu.rafael.tiposvariaveis.TiposVariaveis;
 
-public class App {
+public class Usuario {
     public static void main(String[] args) throws Exception {
         // System.out.println("Boa vindas turma DIO!");
 
